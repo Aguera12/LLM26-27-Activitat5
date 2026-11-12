@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Introducció a la història de Star Wars: la Força, els Jedi, els Sith i la guerra per la galàxia. Uneix-te al costat de la llum o al costat fosc.">
+    <meta name="author" content="Víctor Agüera Rodríguez">
+    <meta name="keywords" content="Star Wars, història, Jedi, Sith, la Força, costat fosc, costat de la llum">
+    <link rel="stylesheet" href="./css/estils.css">
+    <script src="./components/rellotge.js" defer></script>
+    <script src="./components/historia.js" defer></script>
+    <script src="./components/formulari.js" defer></script>
+    <title>Star Wars - Història d'una galàxia molt llunyana</title>
+</head>
+<body>
+    <header class="header">
+        <img src="./img/logo.png" alt="Logo de Star Wars">
+        <div class="rellotge"></div>
+        <nav>
+            <a href="index.html" class="active">Inici</a>
+            <a href="personatges-llum.html">Costat de la llum</a>
+            <a href="personatges-oscurs.html">Costat fosc</a>
+        </nav>
+    </header>
+    <hr class="border">
+
+    <main>
+        <section class="portada">
+            <h1>STAR WARS</h1>
+            <h2>Fa molt de temps, en una galàxia molt llunyana...</h2>
+        </section>
+
+        <section id="historia" class="gray">
+            <h2>La història en poques paraules</h2>
+            <article class="texto">
+                <h3>La Força</h3>
+                <p>Un camp d'energia que uneix tots els éssers vius. Els qui saben sentir-la i usar-la poden moure objectes, preveure perills i influir en altres ments.</p>
+
+                <h3>Jedi i Sith</h3>
+                <p>Els Jedi fan servir la Força per protegir la pau i la justícia. Els Sith la fan servir per assolir el poder a través de l'odi i la por. El seu enfrontament dura mil·lennis.</p>
+
+                <h3>De l'Imperi a la Rebel·lió</h3>
+                <p>La República cau i l'Emperador Palpatine funda l'Imperi. Una aliança rebel s'alça contra ell, i la seva esperança recau en un jove granger anomenat Luke Skywalker.</p>
+
+                <h3>L'equilibri</h3>
+                <p>Amb la caiguda de l'Imperi la galàxia respira, però el costat fosc mai no desapareix del tot. Noves amenaces obliguen una nova generació a triar el seu camí.</p>
+            </article>
+
+            <p class="enlaces">
+                Coneix els <a href="personatges-llum.html">personatges de la llum</a>
+                o els <a href="personatges-oscurs.html">personatges foscos</a>.
+            </p>
+        </section>
+
+        <section class="gray formulario">
+            <h2>Tria el teu costat</h2>
+            <form id="join-form" action="#" method="post" autocomplete="off">
+                <fieldset>
+                    <legend>Uneix-te a la galàxia</legend>
+                    <ul>
+                        <li>
+                            <label for="nombre">Nom:</label>
+                            <input type="text" name="nombre" id="nombre" required>
+                        </li>
+                        <li>
+                            <label for="lado">Costat:</label>
+                            <select name="lado" id="lado" required>
+                                <option value="" selected disabled>Tria un costat</option>
+                                <option value="luz">Costat de la llum</option>
+                                <option value="oscuro">Costat fosc</option>
+                            </select>
+                        </li>
+                        <li>
+                            <label for="color">Color del sabre:</label>
+                            <select name="color" id="color" required>
+                                <option value="" selected disabled>Tria un color</option>
+                                <option value="azul">Blau</option>
+                                <option value="verde">Verd</option>
+                                <option value="rojo">Vermell</option>
+                                <option value="morado">Lila</option>
+                                <option value="amarillo">Groc</option>
+                                <option value="blanco">Blanc</option>
+                            </select>
+                        </li>
+                        <li>
+                            <label for="password">Contrasenya:</label>
+                            <input type="password" name="password" id="password" required>
+                        </li>
+                        <li>
+                            <label for="cpassword">Repeteix la contrasenya:</label>
+                            <input type="password" name="cpassword" id="cpassword" required>
+                        </li>
+                    </ul>
+                </fieldset>
+                <input type="submit" value="Uneix-me">
+                <input type="reset" value="Esborra">
+            </form>
+        </section>
+    </main>
+
+    <hr class="border">
+    <footer class="footer">
+        <p>Activitat realitzada per <strong>Víctor Agüera Rodríguez</strong></p>
+        <p>Fotografies de <a href="https://unsplash.com/">Unsplash</a>
+            <a href="https://creativecommons.org/licenses/by-sa/4.0/"><img src="./img/creative-commons.png" alt="Llicència Creative Commons"></a></p>
+    </footer>
+</body>
+</html>
